@@ -1,0 +1,14 @@
+This is a All in One repo that combines official Drupal9 with MySQL8
+It takes some time for the first time to start as MySQL needs to initialize the database.
+
+
+Reference:
+Drupal: https://github.com/docker-library/drupal/blob/21a961673ec84ea82887b27f5004bf0bba10fd46/9.0/apache-buster/Dockerfile
+MySQL: https://github.com/docker-library/mysql/blob/285fd39122e4b04fbe18e464deb72977df9c6a45/8.0/Dockerfile
+
+Test:
+Start container using kevin808/drupal9withmysql8:latest
+docker run -d -p 8080:80 kevin808/drupal9withmysql8:latest
+
+Note:
+The MySQL's password is empty and MySQL's connection is not exposed to external network. It can be manually defined.
